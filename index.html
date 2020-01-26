@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
+    <title>Beerflix</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- styles -->
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav id="navbar" class="app-navbar no-search filter">
+      <div class="navbar-logo">
+        <a href="/">Beerflix</a>
+      </div>
+      <div class="navbar-right-actions">
+        <div class="filter-container">
+          <form id="search-form" class="filter-input" novalidate>
+            <input data-pattern-mismatch="Input invalid" required placeholder="search your serie" class="input search" type="text">
+            <button type="submit" class="button search">Search</button>
+          </form>
+        </div>
+        <div class="navbar-icon">
+          <i id="navbar-search" class="fas fa-search"></i>
+          <i id="navbar-close" class="fas fa-times"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- navbar-end -->
+    <!-- main–section -->
+    <main>
+      <section id="beers-section">
+      </section>
+    </main>
+    <section id="detailSection" class="detail-section">
+    </section>
+    <!-- loader -->
+    <div id="loader" class="loader-container hide">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <!-- Loader end -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.mjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@beta/dist/js.cookie.min.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script type="module" src="/js/routes.js"></script>
+    <!-- main-section end -->
+  </body>
+</html>
